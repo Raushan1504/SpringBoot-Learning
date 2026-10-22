@@ -10,6 +10,10 @@ public class Main {
 
 
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class) ;
+//        OrderService os1 = context.getBean(OrderService.class);
+//        OrderService os2 = context.getBean(OrderService.class);
+
+
 
     }
 }
