@@ -1,13 +1,16 @@
 package com.learning;
 
 
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 @Component
 public class OrderService {
     private PaymentService paymentService;
-    OrderService(){
-        System.out.println("Order Created");
+    OrderService(@Lazy PaymentService paymentService){
+
+        this.paymentService = paymentService;
+
     }
 
 

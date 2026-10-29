@@ -10,14 +10,5 @@ public class AppConfig {
 
 
 
-    @Bean
-    public OrderService os1(){
-        return new OrderService();
-    }
 
-
-    @Bean
-    public OrderService os2(){
-        return new OrderService();
-    }
 }
